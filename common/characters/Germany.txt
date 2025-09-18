@@ -1,0 +1,34 @@
+characters={
+	Wilhelm_II={
+		name=Wilhelm_II
+		portraits = {
+			civilian={
+				large=GFX_portrait_Wilhelm_II
+			}
+		}
+		country_leader = {
+			ideology = semi_constitutional_monarchism
+			desc=wilhelm_ii_desc
+			expire="1965.1.1"
+			traits={GER_Kaiser_Of_Old_World}
+		}
+		country_leader = {
+			ideology=despotic_monarchy
+			desc=wilhelm_ii_desc
+			expire="1965.1.1"
+			traits={GER_Kaiser_Of_Old_World}
+		}
+		country_leader = {
+			ideology = conservatism
+			desc=wilhelm_ii_desc
+			expire="1965.1.1"
+			traits={GER_Kaiser_Of_Old_World}
+		}	
+		country_leader = {
+			ideology = social_democratic_ideology
+			desc=wilhelm_ii_desc
+			expire="1965.1.1"
+			traits={GER_Kaiser_Of_Old_World}
+		}
+	}
+}
