@@ -1,6 +1,0 @@
-spriteTypes={
-	spriteType = {
-		name = "GFX_portrait_Wilhelm_II"
-		texturefile = "gfx/leaders/GER/Wilhelm_II.dds"
-	}
-}
