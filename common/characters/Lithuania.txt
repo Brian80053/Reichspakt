@@ -1,0 +1,25 @@
+characters={
+	Friedrich_IV={
+		name=Friedrich_IV
+		portraits={
+			civilian={
+				large=GFX_portrait_Friedrich_IV
+			}
+		}
+		country_leader={
+			ideology = social_democratic_ideology
+			desc=friedrich_iv_desc
+			expire="1965.1.1"
+		}
+		country_leader={
+			ideology = liberalism
+			desc=friedrich_iv_desc
+			expire="1965.1.1"
+		}
+		country_leader={
+			ideology = semi_constitutional_monarchism
+			desc=friedrich_iv_desc
+			expire="1965.1.1"
+		}
+	}
+}

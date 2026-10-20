@@ -1,0 +1,16 @@
+characters={
+	NET_hendrikus_colijn={
+		name=NET_hendrikus_colijn
+		portraits={
+			civilian={
+				large="GFX_portrait_hendrikus_colijn"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ strict_austerity_adherent }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

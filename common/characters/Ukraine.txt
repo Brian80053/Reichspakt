@@ -1,0 +1,25 @@
+characters = {
+	Pavio_Skoropadskyi = {
+		name = Pavio_Skoropadskyi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_UKR_Pavio_Skoropadskyi
+			}
+		}
+		country_leader = {
+			ideology = authocratism
+			desc = Pavio_Skoropadskyi_desc
+			expire = "1965.1.1"
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			desc = Pavio_Skoropadskyi_desc
+			expire = "1965.1.1"
+		}
+		country_leader = {
+			ideology = despotic_monarchy
+			desc = Pavio_Skoropadskyi_desc
+			expire = "1965.1.1"
+		}
+	}
+}

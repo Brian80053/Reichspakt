@@ -1,0 +1,309 @@
+capital= 64
+oob="GER_1936"
+set_research_slots = 4
+#character recruit
+recruit_character = Wilhelm_II
+#setup tech
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "GER_1936_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			iw_large_airframe = 1
+			air_torpedoe_1 = 1
+			photo_reconnaisance = 1
+			bba_early_transport_plane = 1
+		}
+	else = {
+		set_air_oob = "GER_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			tactical_bomber1 = 1
+			strategic_bomber1 = 1
+			CAS1 = 1
+			naval_bomber1 = 1
+			early_transport_plane = 1
+		}
+	}
+}
+
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+
+# starting_truck_buffer = 0.8
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+	set_naval_oob = "GER_1936_naval"
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		panzerschiffe = 1
+		pre_dreadnoughts = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_depth_charges = 1
+		sonar = 1
+		basic_cruiser_armor_scheme = 1
+	}
+	set_naval_oob = "GER_1936_naval_mtg"
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+#setup settings
+set_convoys = 200
+set_stability = 0.75
+set_war_support = 0.3
+#setup_politic
+set_politics={
+	ruling_party = democratic
+	last_election = "1933.3.5"
+	election_frequency = 60
+	elections_allowed = yes	
+}
+set_popularities = { #TO DO
+	communism=6
+	social_democratic=23.75
+	liberal_democratic = 9.5
+	democratic= 36.25
+	authoritarian_democratic= 13
+	autocratic= 7.5
+	fascism= 4
+}
+#faction
+create_faction=middle_europe
+add_to_faction=GER
+add_to_faction = POL
+add_to_faction = LIT
+add_to_faction = BAL
+add_to_faction = BLR
+add_to_faction = UKR
+add_to_faction = FIN
+add_to_faction = BEL
+#setup ns
+#setup puppet
+set_autonomy={
+	target=POL
+	autonomous_state = autonomy_eastern_states
+}
+set_autonomy={
+	target=LIT
+	autonomous_state = autonomy_eastern_states
+}
+set_autonomy = {
+	target = BAL
+	autonomous_state = autonomy_eastern_states
+}
+set_autonomy = {
+	target = BLR
+	autonomy_state = autonomy_free_eastern_states
+}
+set_autonomy = {
+	target = UKR
+	autonomy_state = autonomy_free_eastern_states
+}
+set_autonomy = {
+	target = FIN
+	autonomy_state = autonomy_free_eastern_states
+}
+set_autonomy = {
+	target = BEL
+	autonomy_state = autonomy_puppet
+}
+#set variable
+set_variable = {
+	GER_parliament_seats = 247
+}
+set_variable = {
+	GER_parliament_seats_per = 61.75
+}
+#set tank
+if = {
+	limit = { has_dlc = "No Step Back" }
+	create_equipment_variant = {
+		name = "LK III"
+		type = light_tank_chassis_0
+		parent_version = 0
+		obsolete = yes
+		modules = {
+			main_armament_slot = tank_auto_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		icon = "GFX_GER_gwtank_medium"
+	}
+	create_equipment_variant = {
+		name = "LK IV"
+		type = light_tank_chassis_1
+		parent_version = 0
+		obsolete = yes
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 1
+		}
+		icon = "GFX_GER_basic_light_tank_medium"
+	}
+	create_equipment_variant = {
+		name = "LK V"
+		type = light_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 1
+		}
+		icon = "GFX_GER_improved_light_tank_medium"
+	}
+	#middle tank
+	#heavy tank
+	create_equipment_variant = {
+		name = "A7V Hedi"
+		type = heavy_tank_chassis_0
+		parent_version = 0
+		obsolete = yes
+		modules = {
+			main_armament_slot = tank_heavy_cannon
+			turret_type_slot = tank_heavy_three_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+		}
+		icon = "GFX_generic_gw_heavy_tank_medium"
+	}
+	create_equipment_variant = {
+		name = "A7V II"
+		type = heavy_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_cannon
+			turret_type_slot = tank_heavy_three_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 4
+			tank_nsb_engine_upgrade = 4
+		}
+		icon = "GFX_GER_basic_heavy_tank_medium"
+	}	
+}
+#set navy

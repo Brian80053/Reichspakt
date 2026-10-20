@@ -1,0 +1,10 @@
+GER_clear_all_alliance = {
+	clr_country_flag = ISPD_allied
+	clr_country_flag = SPD_allied
+	clr_country_flag = DDP_allied
+	clr_country_flag = Zentrum_allied
+	clr_country_flag = DKP_allied
+	clr_country_flag = DNVP_allied
+	clr_country_flag = DVLP_allied
+	reload_parliament_gui = yes
+}

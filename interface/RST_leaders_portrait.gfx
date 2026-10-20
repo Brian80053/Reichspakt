@@ -1,0 +1,39 @@
+spriteTypes={
+	spriteType = {
+		name = "GFX_portrait_Wilhelm_II"
+		texturefile = "gfx/leaders/GER/Wilhelm_II.dds"
+	}
+	spriteType={
+		name = "GFX_portrait_Eitel_I"
+		texturefile = "gfx/leaders/POL/Eitel_I.dds"
+	}
+	spriteType={
+		# it will be modified into vanila Hoi4 portraits
+		name= "GFX_portrait_Friedrich_IV"
+		texturefile= "gfx/leaders/LIT/Friedrich_IV.dds"
+	}
+	spriteType={
+		name= "GFX_portrait_Adolf_Friedrich"
+		texturefile= "gfx/leaders/BAL/Adolf_Friedrich.dds"
+	}
+	spriteType={
+		name = "GFX_portrait_Vasil_Zachakra"
+		texturefile = "gfx/leaders/BLR/Vasil Zacharka.dds"
+	}
+	spriteType={
+		name = "GFX_portrait_UKR_Pavio_Skoropadskyi"
+		texturefile = "gfx/leaders/UKR/Pavio_Skoropadskyi.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Kaarle_I"
+		textureFile = "gfx/leaders/FIN/Kaarle_I.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Alexander_von_Falkenhausen"
+		textureFile = "gfx/leaders/BEL/Alexander_von_Falkenhausen.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hendrikus_colijn"
+		texturefile = "gfx/leaders/NET/portrait_net_hendrikus_colijn.dds"
+	}
+}

@@ -1,0 +1,25 @@
+characters={
+	Vasil_Zacharka={
+		name = Vasil_Zacharka
+		portraits={
+			civilian = {
+				large = GFX_portrait_Vasil_Zachakra
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			desc= vasil_zacharka_desc
+			expire = "1949.1.1"
+		}
+		country_leader = {
+			ideology = social_democratic_ideology
+			desc= vasil_zacharka_desc
+			expire = "1949.1.1"
+		}	
+		country_leader = {
+			ideology = guided_democracy
+			desc= vasil_zacharka_desc
+			expire = "1949.1.1"
+		}	
+	}
+}

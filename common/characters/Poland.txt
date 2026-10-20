@@ -1,0 +1,22 @@
+characters={
+	Eitel_I={
+		name=Eitel_I
+		portraits={
+			civilian={
+				large=GFX_portrait_Eitel_I
+			}
+		}
+		country_leader={
+			ideology=semi_constitutional_monarchism
+			desc=Eitel_I_desc
+			expire="1965.1.1"
+			traits={POL_Unpopular_Kaiser}
+		}
+		country_leader={
+			ideology=conservatism
+			desc=Eitel_I_desc
+			expire="1965.1.1"
+			traits={POL_Unpopular_Kaiser}
+		}
+	}
+}

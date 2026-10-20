@@ -1,0 +1,11 @@
+GER	= "countries/Germany.txt"
+POL	= "countries/Poland.txt"
+LIT	= "countries/Lithuania.txt"
+BAL = "countries/Baltic_Duchy.txt"
+BLR = "countries/Belarus.txt"
+UKR = "countries/Ukraine.txt"
+FIN = "countries/Finland.txt"
+BEL = "countries/Belgium.txt"
+NET = "countries/Netherlands.txt"
+FRA = "countries/France.txt"
+

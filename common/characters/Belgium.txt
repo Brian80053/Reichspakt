@@ -1,0 +1,16 @@
+characters = {
+	Alexander_von_Falkenhausen = {
+		name = Alexander_von_Falkenhausen
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Alexander_von_Falkenhausen
+			}
+		}
+		country_leader = {
+			ideology = authocratism
+			desc = Alexander_von_Falkenhausen_desc
+			expire = "1965.1.1"
+			traits = { BEL_Sudden_Successor }
+		}
+	}
+}

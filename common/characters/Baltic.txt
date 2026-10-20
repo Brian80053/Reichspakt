@@ -1,0 +1,22 @@
+characters={
+	Adolf_Friedrich={
+		name=Adolf_Friedrich
+		portraits={
+			civilian={
+				large=GFX_portrait_Adolf_Friedrich
+			}
+		}
+		country_leader = {
+			ideology = semi_constitutional_monarchism
+			expire="1965.1.1"
+		}
+		country_leader = {
+			ideology = despotic_monarchy
+			expire="1965.1.1"
+		}		
+		country_leader = {
+			ideology = liberalism
+			expire="1965.1.1"
+		}	
+	}
+}

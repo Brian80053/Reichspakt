@@ -1,0 +1,25 @@
+characters = {
+	Kaarle_I = {
+		name = Kaarle_I
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Kaarle_I
+			}
+		}
+		country_leader = {
+			ideology=semi_constitutional_monarchism
+			desc=Kaarle_I_desc
+			expire="1965.1.1"
+		}
+		country_leader = {
+			ideology=despotic_monarchy
+			desc=Kaarle_I_desc
+			expire="1965.1.1"
+		}
+		country_leader = {
+			ideology=liberalism
+			desc=Kaarle_I_desc
+			expire="1965.1.1"
+		}
+	}
+}

@@ -1,0 +1,13 @@
+colony_tag = {
+	if = {
+		limit = {
+			is_subject = yes
+		}
+		if = {
+			limit = {
+				original_tag = BEL
+			}
+			set_cosmetic_tag = BEL_GER
+		}
+	}
+}

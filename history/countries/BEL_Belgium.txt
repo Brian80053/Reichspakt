@@ -1,0 +1,75 @@
+capital = 6
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = { bicycle_infantry = 1 }
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	else = {
+		set_technology = {
+			early_fighter = 1
+		}
+	}
+}
+set_oob = BEL_1936
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.1
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	basic_train = 1
+	gw_artillery = 1
+	interwar_antitank = 1
+	tech_mountaineers = 1
+}
+
+IF = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+	else = {
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+			basic_light_td = 1
+		}
+	}
+}
+add_ideas = {
+	extensive_conscription
+	#illegalized socialism: communism -0.1,social democratic - 0.08
+}
+set_politics = {
+	ruling_party = autocratic
+	last_election = "1918.11.11"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 1
+	social_democratic = 3
+	liberal_democratic = 2
+	democratic = 10
+	authoritarian_democratic = 21
+	autocratic = 58
+	fascism = 5
+}
+#set up variable
+colony_tag = yes
+#recruit characters
+recruit_character = Alexander_von_Falkenhausen
+#add_ideas
+add_ideas = BEL_suppressed_socialism

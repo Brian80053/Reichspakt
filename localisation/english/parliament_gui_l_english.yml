@@ -1,0 +1,20 @@
+﻿l_english:
+
+ # Decisions
+ GER_parliament_gui_decision_category:0 "Reichstag§!"
+  GER_parliament_gui_decision_category_desc:0 "The Reichstag has existed since the 19th century.\nAfter the Weltkrieg, Luxembourg added three seats, bringing the total number of seats in the Reichstag to 400.\nHowever, a 1931 reform reduced this to 300. The current ruling party, the Zentrum, forms a coalition government with the DDP and SPD."
+
+ # Scripted GUIs
+  semicircle_parliament_gui_title:0 "Reichstag"
+  semicircle_parliament_gui_desc:0 "You are controlling [?GER_parliament_seats] seats. ([?GER_parliament_seats_per|%%])"
+  parliament_main_icon_tt:0 "[GetParliamentSeatName] - [GetParliamentPartyName]"
+  parliament_seat_text:0 "Seat [?temp_seat|Y0]"
+  parliament_member_text:0 "[GetParliamentPartyName] - [?parliament_seat_array^parliament_member_index] Seats §G[United_party]§!"
+  parliament_united_text: "(Allied)"
+  party_1_text:0 "§RIndependent Social Democratic Party of Germany§!"
+  party_2_text:0 "§tSocial Democratic Party of Germany§!"
+  party_3_text:0 "§YGerman Democratic Party§!"
+  party_4_text:0 "§BZentrum§!"
+  party_5_text:0 "§gGerman Conservative Party§!"
+  party_6_text:0 "§2Christian Social Party§!"
+  party_7_text:0 "§LGerman Fatherland Party§!"

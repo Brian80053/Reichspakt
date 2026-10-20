@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		BEL_suppressed_socialism = {
+			picture = generic_communism_banned
+			allowed = {
+				original_tag = BEL
+			}
+			modifier = {
+				communism_drift = -0.05
+				social_democratic_drift = -0.02
+			}
+		}
+	}
+}
